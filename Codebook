@@ -1,0 +1,17 @@
+# CodeBook
+
+## Original Dataset
+Collected from 30 individuals performing 6 activities (e.g., walking, sitting) with a Samsung Galaxy S smartphone.
+
+## Variables in tidy_dataset.txt
+Each row is the average of each variable for a subject/activity pair:
+- `Subject`: Identifier for the individual
+- `Activity`: One of WALKING, SITTING, etc.
+- All other columns: sensor signals like TimeBodyAccelerometer-mean()-X
+
+## Steps Taken:
+1. Merged training and test datasets
+2. Extracted mean and std measurements
+3. Replaced activity codes with names
+4. Cleaned variable names for readability
+5. Grouped by subject/activity and calculated averages
